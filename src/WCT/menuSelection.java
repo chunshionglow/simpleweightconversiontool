@@ -28,6 +28,7 @@ public class menuSelection{
 		
 			switch(Choice) {
 				case "1":
+					f.pounds2KG();
 					break;
 			
 				case "2":

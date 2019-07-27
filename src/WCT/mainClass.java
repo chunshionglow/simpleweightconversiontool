@@ -9,7 +9,6 @@ public class mainClass {
 	public static void main(String args[]) {
 		Scanner userInput = new Scanner(System.in);
 		
-		int menuSelection;
 		ms.mainMenu();
 	}
 }
