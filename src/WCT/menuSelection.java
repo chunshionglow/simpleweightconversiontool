@@ -3,7 +3,11 @@ package WCT;
 import java.util.Scanner;
 
 public class menuSelection{
+	//Functions class declaration
+	static functions f = new functions();
+	
 	static Scanner userInput = new Scanner(System.in);
+	
 	public static void print(Object msg) {
 		System.out.println(msg);
 	}
