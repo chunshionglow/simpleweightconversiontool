@@ -14,6 +14,9 @@ public class functions {
 		pounds = userInput.nextDouble();
 		kg = pounds / 2.205;
 		ms.print("Pounds : " + pounds + "\nKG :" + kg);
+		ms.print("Press Enter to Continue");
+		userInput.nextLine();
+		userInput.nextLine();
 		ms.mainMenu();
 	}
 	
