@@ -21,6 +21,10 @@ public class functions {
 	}
 	
 	public static void KG2pounds() {
+		double pounds, kg;
 		
+		userInput.nextLine();
+		userInput.nextLine();
+		ms.mainMenu();
 	}
 }
