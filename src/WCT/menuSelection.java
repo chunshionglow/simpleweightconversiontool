@@ -2,57 +2,48 @@ package WCT;
 
 import java.util.Scanner;
 
-public class menuSelection{
-	//Functions class declaration
-	static functions f = new functions();
-	
+public class menuSelection{	
 	static Scanner userInput = new Scanner(System.in);
 	
-	public static void print(Object msg) {
-		System.out.println(msg);
-	}
-	public static void header() {
-		print("----------WEIGHT CONVERSATION TOOL----------\n");
-	}
-	public static void mainMenu() {
+	public static void mainMenuWithSelection() {
 		boolean canContinue = true;
 		do{
-			header();
-			print("1. Pounds to KG\n2. KG to Pounds\n"
-		
-				+ "3. KG to Grams\n4. Grams to KG\n"
-				+ "5. Miligrams to Grams\n"
-				+ "6. Grams to Miligrams\n"
-				+ "7. Exit");
+			utilities.header();
+			utilities.mainMenu();
 			String Choice = userInput.nextLine();
 		
 			switch(Choice) {
 				case "1":
-					f.pounds2KG();
+					functions.pounds2KG();
 					break;
 			
 				case "2":
+					functions.KG2pounds();
 					break;
 			
 				case "3":
+					functions.KG2grams();
 					break;
 					
 				case "4":
+					functions.grams2KG();
 					break;
 				
 				case "5":
+					functions.MG2grams();
 					break;
 				
 				case "6":
+					functions.grams2MG();
 					break;
 				
 				case "7":
-					print("Thank You For Using!");
+					utilities.exitMessage();
 					System.exit(0);
 					break;
 				
 				default:
-					print("Invalid Input. Please Try Again");
+					utilities.invalidInput();
 					canContinue = false;
 					break;
 			}
