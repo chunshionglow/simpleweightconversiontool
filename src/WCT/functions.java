@@ -42,6 +42,14 @@ public class functions {
 	}
 	
 	public static void grams2KG() {
-		
+		double grams , kg;
+		utilities.print("Enter in grams: ");
+		grams = userInput.nextDouble();
+		kg = grams / 1000;
+		utilities.print("KG: " + kg + "\nGrams: " + grams);
+		utilities.print("Press Enter to Continue");
+		userInput.nextLine();
+		userInput.nextLine();
+		menuSelection.mainMenuWithSelection();
 	}
 }

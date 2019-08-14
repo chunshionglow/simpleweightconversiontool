@@ -26,6 +26,7 @@ public class menuSelection{
 					break;
 					
 				case "4":
+					functions.grams2KG();
 					break;
 				
 				case "5":
