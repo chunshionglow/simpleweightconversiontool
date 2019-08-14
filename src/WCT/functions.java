@@ -14,18 +14,34 @@ public class functions {
 		utilities.print("Press Enter to Continue");
 		userInput.nextLine();
 		userInput.nextLine();
-		menuSelection.mainMenu();
+		menuSelection.mainMenuWithSelection();
 	}
 	
 	public static void KG2pounds() {
-		double pounds, kg;
+		double kg, pounds;
 		utilities.print("Enter in Kilograms: ");
 		kg = userInput.nextDouble();
-		pounds = kg / 2.205;
+		pounds = kg * 2.205;
 		utilities.print("KG: " + kg + "\nPounds: "+ pounds);
 		utilities.print("Press Enter to Continue");
 		userInput.nextLine();
 		userInput.nextLine();
-		menuSelection.mainMenu();
+		menuSelection.mainMenuWithSelection();
+	}
+	
+	public static void KG2grams() {
+		double kg, grams;
+		utilities.print("Enter in Kilograms: ");
+		kg = userInput.nextDouble();
+		grams = kg * 1000;
+		utilities.print("Grams: " + grams + "\nKG: " + kg);
+		utilities.print("Press Enter to Continue");
+		userInput.nextLine();
+		userInput.nextLine();
+		menuSelection.mainMenuWithSelection();
+	}
+	
+	public static void grams2KG() {
+		
 	}
 }

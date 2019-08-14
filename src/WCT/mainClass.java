@@ -7,6 +7,6 @@ public class mainClass {
 	public static void main(String args[]) {
 		
 		
-		menuSelection.mainMenu();
+		menuSelection.mainMenuWithSelection();
 	}
 }

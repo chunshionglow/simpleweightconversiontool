@@ -5,18 +5,11 @@ import java.util.Scanner;
 public class menuSelection{	
 	static Scanner userInput = new Scanner(System.in);
 	
-	public static void header() {
-		utilities.print("----------WEIGHT CONVERSATION TOOL----------\n");
-	}
-	public static void mainMenu() {
+	public static void mainMenuWithSelection() {
 		boolean canContinue = true;
 		do{
-			header();
-			utilities.print("1. Pounds to KG\n2. KG to Pounds\n"
-				+ "3. KG to Grams\n4. Grams to KG\n"
-				+ "5. Miligrams to Grams\n"
-				+ "6. Grams to Miligrams\n"
-				+ "7. Exit");
+			utilities.header();
+			utilities.mainMenu();
 			String Choice = userInput.nextLine();
 		
 			switch(Choice) {
@@ -29,6 +22,7 @@ public class menuSelection{
 					break;
 			
 				case "3":
+					functions.KG2grams();
 					break;
 					
 				case "4":
@@ -41,12 +35,12 @@ public class menuSelection{
 					break;
 				
 				case "7":
-					utilities.print("Thank You For Using!");
+					utilities.exitMessage();
 					System.exit(0);
 					break;
 				
 				default:
-					utilities.print("Invalid Input. Please Try Again");
+					utilities.invalidInput();
 					canContinue = false;
 					break;
 			}
