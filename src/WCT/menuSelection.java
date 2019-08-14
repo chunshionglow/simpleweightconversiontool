@@ -30,9 +30,11 @@ public class menuSelection{
 					break;
 				
 				case "5":
+					functions.MG2grams();
 					break;
 				
 				case "6":
+					functions.grams2MG();
 					break;
 				
 				case "7":
