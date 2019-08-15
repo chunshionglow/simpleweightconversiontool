@@ -44,6 +44,7 @@ public class menuSelection{
 				
 				default:
 					utilities.invalidInput();
+					System.out.println("Please enter values 1 - 7");
 					canContinue = false;
 					break;
 			}
