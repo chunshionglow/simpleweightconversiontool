@@ -10,6 +10,7 @@ public class menuSelection{
 		do{
 			utilities.header();
 			utilities.mainMenu();
+			utilities.enterInstructions();
 			String Choice = userInput.nextLine();
 		
 			switch(Choice) {
@@ -44,7 +45,7 @@ public class menuSelection{
 				
 				default:
 					utilities.invalidInput();
-					System.out.println("Please enter values 1 - 7");
+					utilities.enterInstructions();
 					canContinue = false;
 					break;
 			}
